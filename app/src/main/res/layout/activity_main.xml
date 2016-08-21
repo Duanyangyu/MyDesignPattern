@@ -25,6 +25,12 @@
             android:layout_height="wrap_content"
             android:text="工厂模式"/>
 
+        <Button
+            android:id="@+id/btn_pattern_producer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生产者/消费者模式"/>
+
     </com.duanyy.mydesignpattern.view.MyFlowLayout>
 
 </ScrollView>

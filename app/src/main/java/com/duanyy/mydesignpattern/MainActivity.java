@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.duanyy.mydesignpattern.observer.ObserverActivity;
+import com.duanyy.mydesignpattern.producer.ProducerActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick({
             R.id.btn_pattern_observer,
-            R.id.btn_pattern_factory
+            R.id.btn_pattern_factory,
+            R.id.btn_pattern_producer
     })
     public void btnObserver(View button){
         int id = button.getId();
@@ -37,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_pattern_factory:
                 intent.setClass(this, ObserverActivity.class);
+                break;
+            case R.id.btn_pattern_producer:
+                intent.setClass(this, ProducerActivity.class);
                 break;
         }
         startActivity(intent);

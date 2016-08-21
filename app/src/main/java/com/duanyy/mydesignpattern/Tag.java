@@ -5,6 +5,7 @@ package com.duanyy.mydesignpattern;
  */
 public class Tag {
 
-    public static final String OBSERVER = "Observer";
+    public static final String OBSERVER = "ObserverPattern";
+    public static final String PRODUCER = "ProducerConsumerPattern";
 
 }
