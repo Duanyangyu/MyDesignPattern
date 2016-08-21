@@ -32,10 +32,12 @@ public class ObserverActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_observer)
     public void onClick(View view){
-        ConcreteSubject concreteSubject = new ConcreteSubject("origin concreteSubject");
+        ConcreteSubject concreteSubject = new ConcreteSubject("111");
         ConcreteObserver concreteObserver = new ConcreteObserver();
         concreteSubject.attach(concreteObserver);
-        concreteSubject.change("change concreteSubject");
+        concreteSubject.change("222");
+//        concreteSubject.detach(concreteObserver);
+        concreteSubject.change("333");
     }
 
 }
